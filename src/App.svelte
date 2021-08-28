@@ -6,8 +6,13 @@
 
 //function list
 	const addAge = () => age += 1;
+	
 	const decreaseAge = () => age -= 1;
 
+	const nameChange = (e) => {
+		const nameChange = e.target.value;
+		name = nameChange;
+	}
 //
 
 </script>
@@ -16,6 +21,8 @@
 	<h1>Hello {name}, Age {age}!</h1>
 	<button on:click="{addAge}">BUTTON OF AGING</button>
 	<button on:click="{decreaseAge}">BUTTON OF YOUTH</button>
+	<br/>
+	<input type="text" value="{name}" on:input="{nameChange}"/>
 
 </main>
 
