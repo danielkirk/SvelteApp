@@ -6,7 +6,6 @@
     var myChart;
 
 const createChart = () => {
-    if (myChart) myChart.update();
     const ctx = document.getElementById('myChart').getContext('2d');
     myChart = new Chart(ctx, {
     type: 'bar',
